@@ -188,3 +188,16 @@ DELETE FROM `creature_template` WHERE `entry` IN (19312);
 INSERT INTO `creature_template` (`entry`, `difficulty_entry_1`, `difficulty_entry_2`, `difficulty_entry_3`, `KillCredit1`, `KillCredit2`, `modelid1`, `modelid2`, `modelid3`, `modelid4`, `name`, `gossip_menu_id`, `minlevel`, `maxlevel`, `exp`, `faction`, `npcflag`, `speed_walk`, `speed_run`, `scale`, `rank`, `dmgschool`, `BaseAttackTime`, `RangeAttackTime`, `BaseVariance`, `RangeVariance`, `unit_class`, `unit_flags`, `unit_flags2`, `dynamicflags`, `family`, `type`, `type_flags`, `lootid`, `pickpocketloot`, `skinloot`, `PetSpellDataId`, `VehicleId`, `mingold`, `maxgold`, `AIName`, `MovementType`, `HoverHeight`, `HealthModifier`, `ManaModifier`, `ArmorModifier`, `DamageModifier`, `ExperienceModifier`, `RacialLeader`, `movementId`, `RegenHealth`, `mechanic_immune_mask`, `flags_extra`, `ScriptName`, `VerifiedBuild`) 
 VALUES ('19312', '0', '0', '0', '22334', '0', '18725', '0', '0', '0', 'Drillmaster Zurok', '0', '61', '61', '1', '1662', '0', '1', '1.14286', '1', '0', '0', '2000', '2000', '1', '1', '1', '64', '2048', '0', '0', '7', '0', '19312', '19312', '0', '0', '0', '995', '1304', 'SmartAI', '1', '1', '4', '1', '1', '4.6', '1', '0', '0', '1', '0', '0', '', '12340');
 
+-- Sell Mark of Honor Hold and Mark of Thrallmar on their respective vendors.
+DELETE FROM `npc_vendor` WHERE `entry` = 18581 AND `item` = 24579;
+DELETE FROM `npc_vendor` WHERE `entry` = 18266 AND `item` = 24579;
+DELETE FROM `npc_vendor` WHERE `entry` = 18564 AND `item` = 24581;
+DELETE FROM `npc_vendor` WHERE `entry` = 18267 AND `item` = 24581;
+INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`, `VerifiedBuild`)
+VALUES
+-- Mark of Honor Hold
+('18581', '0', '24579', '0', '0', '0', '0'), -- Alliance Field Scout
+('18266', '0', '24579', '0', '0', '0', '0'), -- Warrant Officer Tracy Proudwell
+-- Mark of Thrallmar
+('18564', '0', '24581', '0', '0', '0', '0'), -- Horde Field Scout
+('18267', '0', '24581', '0', '0', '0', '0'); -- Battlecryer Blackeye
