@@ -9,6 +9,10 @@ Customizations to the main server configuration file, including path finding map
 - creature_template: 251001-251001
 - npc_vendor: 251001-251001
 
+## Major Revamps
+[Outland Gear Adjustments](mod-outland-gear-adjustment.md)  
+Made rare and epic level 70 gear more useful by lowering its level to 60/65. Also changed some associated stuff in support of the lowering the gear levels.
+
 ## World Objects
 [Portals](new-portals.md)  
 New portals for fast travel to various places.
@@ -22,8 +26,7 @@ A list of existing vendors and vendor items that I have modified.
 
 ## Loot & Misc Items
 
-
 ## Skills, Spells, & Commands
 
 
-## Charcters & Quests
+## Characters & Quests
