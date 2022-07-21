@@ -15,7 +15,10 @@ New portals for fast travel to various places.
  
 ## Vendors & Vendor Items
 [New Vendors](new-vendors.md)  
-A list of all the vendors I have added, including what they sell and where to find them.
+A list of all the vendors I have added, including what they sell and where to find them.  
+
+[Modified Vendors](mod-vendors.md)  
+A list of existing vendors and vendor items that I have modified.
 
 ## Loot & Misc Items
 
