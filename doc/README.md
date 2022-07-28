@@ -3,6 +3,9 @@
 [General Server Configuration](worldserver.md)  
 Customizations to the main server configuration file, including path finding maps, XP rates, auction house bot, etc. CLick the link above for details or view the [worldserver.conf](../worldserver.conf) directly.  
 
+[NPCBots Configuration](npcbots.md)  
+NPCBots are hireable pet-like minions. The system can be highly customized.
+
 ## New Value Ranges
 - gameobject: 220000-220002
 - creature: 213820-213820
